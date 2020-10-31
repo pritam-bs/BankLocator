@@ -9,12 +9,25 @@
 /* Begin PBXBuildFile section */
 		9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */; };
 		9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */; };
-		9CB04C72254D3BFF00758E39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C71254D3BFF00758E39 /* ViewController.swift */; };
-		9CB04C75254D3BFF00758E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C73254D3BFF00758E39 /* Main.storyboard */; };
 		9CB04C77254D3C0000758E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C76254D3C0000758E39 /* Assets.xcassets */; };
 		9CB04C7A254D3C0000758E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C78254D3C0000758E39 /* LaunchScreen.storyboard */; };
 		9CB04C85254D3C0000758E39 /* BankLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C84254D3C0000758E39 /* BankLocatorTests.swift */; };
 		9CB04C90254D3C0000758E39 /* BankLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C8F254D3C0000758E39 /* BankLocatorUITests.swift */; };
+		9CB04CAB254D3EEB00758E39 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CAA254D3EEB00758E39 /* Coordinator.swift */; };
+		9CB04CB4254D401500758E39 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CB3254D401500758E39 /* StoryboardBased.swift */; };
+		9CB04CBF254D42BE00758E39 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CBE254D42BE00758E39 /* ViewModelType.swift */; };
+		9CB04CC4254D472A00758E39 /* BankLocatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CC3254D472A00758E39 /* BankLocatorCoordinator.swift */; };
+		9CB04CCD254D48E000758E39 /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CCC254D48E000758E39 /* RegionsViewController.swift */; };
+		9CB04CD5254D48F200758E39 /* RegionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CD4254D48F200758E39 /* RegionsViewModel.swift */; };
+		9CB04CE2254D49B600758E39 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04CE1254D49B600758E39 /* ColorAssets.xcassets */; };
+		9CB04CE7254D49FB00758E39 /* BankLocatorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04CE6254D49FB00758E39 /* BankLocatorStoryboard.storyboard */; };
+		9CB04CEC254D4A2700758E39 /* RegionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CEB254D4A2700758E39 /* RegionDetailsViewController.swift */; };
+		9CB04CF1254D4A3500758E39 /* RegionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CF0254D4A3500758E39 /* RegionDetailsViewModel.swift */; };
+		9CB04CF6254D4A4500758E39 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CF5254D4A4500758E39 /* DetailsViewController.swift */; };
+		9CB04CFB254D4A5300758E39 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CFA254D4A5300758E39 /* DetailsViewModel.swift */; };
+		9CB04D00254D4CDB00758E39 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CFF254D4CDB00758E39 /* ViewControllerType.swift */; };
+		9CB04D06254D80A200758E39 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D05254D80A200758E39 /* AppError.swift */; };
+		9CB04D0E254D940A00758E39 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D0D254D940A00758E39 /* StoryboardName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +51,6 @@
 		9CB04C6A254D3BFF00758E39 /* BankLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CB04C71254D3BFF00758E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CB04C74254D3BFF00758E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CB04C76254D3C0000758E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CB04C79254D3C0000758E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CB04C7B254D3C0000758E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +60,21 @@
 		9CB04C8B254D3C0000758E39 /* BankLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB04C8F254D3C0000758E39 /* BankLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankLocatorUITests.swift; sourceTree = "<group>"; };
 		9CB04C91254D3C0000758E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB04CAA254D3EEB00758E39 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9CB04CB3254D401500758E39 /* StoryboardBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		9CB04CBE254D42BE00758E39 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		9CB04CC3254D472A00758E39 /* BankLocatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankLocatorCoordinator.swift; sourceTree = "<group>"; };
+		9CB04CCC254D48E000758E39 /* RegionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
+		9CB04CD4254D48F200758E39 /* RegionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewModel.swift; sourceTree = "<group>"; };
+		9CB04CE1254D49B600758E39 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		9CB04CE6254D49FB00758E39 /* BankLocatorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankLocatorStoryboard.storyboard; sourceTree = "<group>"; };
+		9CB04CEB254D4A2700758E39 /* RegionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailsViewController.swift; sourceTree = "<group>"; };
+		9CB04CF0254D4A3500758E39 /* RegionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailsViewModel.swift; sourceTree = "<group>"; };
+		9CB04CF5254D4A4500758E39 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9CB04CFA254D4A5300758E39 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		9CB04CFF254D4CDB00758E39 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
+		9CB04D05254D80A200758E39 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		9CB04D0D254D940A00758E39 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +125,13 @@
 		9CB04C6C254D3BFF00758E39 /* BankLocator */ = {
 			isa = PBXGroup;
 			children = (
+				9CB04D04254D808700758E39 /* Error */,
+				9CB04CC8254D479D00758E39 /* Features */,
+				9CB04CB2254D3FDE00758E39 /* Protocol */,
+				9CB04CA9254D3ED200758E39 /* Coordinator */,
+				9CB04CDC254D493700758E39 /* Resources */,
 				9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */,
 				9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */,
-				9CB04C71254D3BFF00758E39 /* ViewController.swift */,
-				9CB04C73254D3BFF00758E39 /* Main.storyboard */,
-				9CB04C76254D3C0000758E39 /* Assets.xcassets */,
 				9CB04C78254D3C0000758E39 /* LaunchScreen.storyboard */,
 				9CB04C7B254D3C0000758E39 /* Info.plist */,
 			);
@@ -126,6 +154,89 @@
 				9CB04C91254D3C0000758E39 /* Info.plist */,
 			);
 			path = BankLocatorUITests;
+			sourceTree = "<group>";
+		};
+		9CB04CA9254D3ED200758E39 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CAA254D3EEB00758E39 /* Coordinator.swift */,
+				9CB04CC3254D472A00758E39 /* BankLocatorCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9CB04CB2254D3FDE00758E39 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CB3254D401500758E39 /* StoryboardBased.swift */,
+				9CB04CBE254D42BE00758E39 /* ViewModelType.swift */,
+				9CB04CFF254D4CDB00758E39 /* ViewControllerType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9CB04CC8254D479D00758E39 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CC9254D485400758E39 /* Regions */,
+				9CB04CCA254D486C00758E39 /* RegionDetails */,
+				9CB04CCB254D488600758E39 /* Details */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9CB04CC9254D485400758E39 /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CCC254D48E000758E39 /* RegionsViewController.swift */,
+				9CB04CD4254D48F200758E39 /* RegionsViewModel.swift */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		9CB04CCA254D486C00758E39 /* RegionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CEB254D4A2700758E39 /* RegionDetailsViewController.swift */,
+				9CB04CF0254D4A3500758E39 /* RegionDetailsViewModel.swift */,
+			);
+			path = RegionDetails;
+			sourceTree = "<group>";
+		};
+		9CB04CCB254D488600758E39 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CF5254D4A4500758E39 /* DetailsViewController.swift */,
+				9CB04CFA254D4A5300758E39 /* DetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		9CB04CDC254D493700758E39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CE0254D497600758E39 /* Storyboards */,
+				9CB04C76254D3C0000758E39 /* Assets.xcassets */,
+				9CB04CE1254D49B600758E39 /* ColorAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CB04CE0254D497600758E39 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04CE6254D49FB00758E39 /* BankLocatorStoryboard.storyboard */,
+				9CB04D0D254D940A00758E39 /* StoryboardName.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9CB04D04254D808700758E39 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04D05254D80A200758E39 /* AppError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB04CE7254D49FB00758E39 /* BankLocatorStoryboard.storyboard in Resources */,
 				9CB04C7A254D3C0000758E39 /* LaunchScreen.storyboard in Resources */,
+				9CB04CE2254D49B600758E39 /* ColorAssets.xcassets in Resources */,
 				9CB04C77254D3C0000758E39 /* Assets.xcassets in Resources */,
-				9CB04C75254D3BFF00758E39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +370,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB04C72254D3BFF00758E39 /* ViewController.swift in Sources */,
+				9CB04CAB254D3EEB00758E39 /* Coordinator.swift in Sources */,
+				9CB04CC4254D472A00758E39 /* BankLocatorCoordinator.swift in Sources */,
+				9CB04CBF254D42BE00758E39 /* ViewModelType.swift in Sources */,
+				9CB04CF6254D4A4500758E39 /* DetailsViewController.swift in Sources */,
+				9CB04CEC254D4A2700758E39 /* RegionDetailsViewController.swift in Sources */,
+				9CB04CCD254D48E000758E39 /* RegionsViewController.swift in Sources */,
+				9CB04D0E254D940A00758E39 /* StoryboardName.swift in Sources */,
+				9CB04D06254D80A200758E39 /* AppError.swift in Sources */,
+				9CB04CF1254D4A3500758E39 /* RegionDetailsViewModel.swift in Sources */,
+				9CB04CD5254D48F200758E39 /* RegionsViewModel.swift in Sources */,
 				9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */,
+				9CB04CB4254D401500758E39 /* StoryboardBased.swift in Sources */,
 				9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */,
+				9CB04CFB254D4A5300758E39 /* DetailsViewModel.swift in Sources */,
+				9CB04D00254D4CDB00758E39 /* ViewControllerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +420,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CB04C73254D3BFF00758E39 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CB04C74254D3BFF00758E39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CB04C78254D3C0000758E39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,7 +559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bd.com.banklocator.BankLocator;
+				PRODUCT_BUNDLE_IDENTIFIER = bd.com.banklocator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bd.com.banklocator.BankLocator;
+				PRODUCT_BUNDLE_IDENTIFIER = bd.com.banklocator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

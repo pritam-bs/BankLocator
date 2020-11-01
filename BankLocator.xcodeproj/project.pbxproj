@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C34C2F4254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34C2F3254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift */; };
+		9C34C2FC254EF02E00F0E714 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34C2FB254EF02E00F0E714 /* Region.swift */; };
 		9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */; };
 		9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */; };
 		9CB04C77254D3C0000758E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C76254D3C0000758E39 /* Assets.xcassets */; };
@@ -35,7 +37,7 @@
 		9CB04D3A254E54B000758E39 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D39254E54B000758E39 /* Branch.swift */; };
 		9CB04D43254E779200758E39 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D42254E779200758E39 /* PersistenceManager.swift */; };
 		9CB04D4C254E839A00758E39 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D4B254E839A00758E39 /* Logger.swift */; };
-		9CB04D54254E8A0000758E39 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D53254E8A0000758E39 /* Region.swift */; };
+		9CB04D54254E8A0000758E39 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D53254E8A0000758E39 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C34C2F3254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
+		9C34C2FB254EF02E00F0E714 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		9CB04C6A254D3BFF00758E39 /* BankLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +94,7 @@
 		9CB04D39254E54B000758E39 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
 		9CB04D42254E779200758E39 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		9CB04D4B254E839A00758E39 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		9CB04D53254E8A0000758E39 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		9CB04D53254E8A0000758E39 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,7 @@
 			children = (
 				9CB04CCC254D48E000758E39 /* RegionsViewController.swift */,
 				9CB04CD4254D48F200758E39 /* RegionsViewModel.swift */,
+				9C34C2F3254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift */,
 			);
 			path = Regions;
 			sourceTree = "<group>";
@@ -282,7 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				9CB04D39254E54B000758E39 /* Branch.swift */,
-				9CB04D53254E8A0000758E39 /* Region.swift */,
+				9CB04D53254E8A0000758E39 /* Country.swift */,
+				9C34C2FB254EF02E00F0E714 /* Region.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -434,11 +440,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB04D54254E8A0000758E39 /* Region.swift in Sources */,
+				9CB04D54254E8A0000758E39 /* Country.swift in Sources */,
 				9CB04CAB254D3EEB00758E39 /* Coordinator.swift in Sources */,
 				9CB04D4C254E839A00758E39 /* Logger.swift in Sources */,
 				9CB04CC4254D472A00758E39 /* BankLocatorCoordinator.swift in Sources */,
 				9CB04CBF254D42BE00758E39 /* ViewModelType.swift in Sources */,
+				9C34C2F4254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift in Sources */,
 				9CB04CF6254D4A4500758E39 /* DetailsViewController.swift in Sources */,
 				9CB04CEC254D4A2700758E39 /* RegionDetailsViewController.swift in Sources */,
 				9CB04D2A254DDA3B00758E39 /* NetworkConstants.swift in Sources */,
@@ -451,6 +458,7 @@
 				9CB04D32254E430F00758E39 /* Network.swift in Sources */,
 				9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */,
 				9CB04CB4254D401500758E39 /* StoryboardBased.swift in Sources */,
+				9C34C2FC254EF02E00F0E714 /* Region.swift in Sources */,
 				9CB04D43254E779200758E39 /* PersistenceManager.swift in Sources */,
 				9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */,
 				9CB04D22254DC5F700758E39 /* ApiPath.swift in Sources */,

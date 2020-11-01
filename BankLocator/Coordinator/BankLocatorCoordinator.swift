@@ -22,8 +22,8 @@ final class BankLocatorCoordinator: Coordinator {
         navigationController.pushViewController(controller, animated: true)
     }
     
-    func navigateToRegionDetails() {
-        let viewModel = RegionDetailsViewModel()
+    func navigateToRegionDetails(region: Region) {
+        let viewModel = RegionDetailsViewModel(region: region)
         viewModel.coordinator = self
         let controller = RegionDetailsViewController.instantiate(withViewModel: viewModel)
         navigationController.pushViewController(controller, animated: true)

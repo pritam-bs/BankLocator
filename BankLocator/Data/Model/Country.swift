@@ -7,14 +7,20 @@
 
 import Foundation
 
-struct Region {
+struct Country {
     let name: String
-    var branches: [Branch]
+    let regions: [Region]
     let uuid = UUID()
 }
 
-extension Region: Hashable, Equatable {
-    static func == (lhs: Region, rhs: Region) -> Bool {
+enum CountryName: String {
+    case estonia = "Estonia"
+    case latvia = "Latvia"
+    case lithuania = "Lithuania"
+}
+
+extension Country: Hashable, Equatable {
+    static func == (lhs: Country, rhs: Country) -> Bool {
         return lhs.uuid == rhs.uuid
     }
     

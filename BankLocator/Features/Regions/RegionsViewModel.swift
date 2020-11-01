@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 class RegionsViewModel: ViewModelType {
     weak var coordinator: BankLocatorCoordinator?
@@ -21,17 +22,22 @@ class RegionsViewModel: ViewModelType {
     private var network: Network
     private var anyCancellable = Set<AnyCancellable>()
     
-    private(set) var regions = CurrentValueSubject<[Region], Never>([])
+    private(set) var viewWillAppearTrigger = PassthroughSubject<Void, Never>()
+    private(set) var countries = CurrentValueSubject<[Country], Never>([])
     
     init(network: Network) {
         self.network = network
-        let regions = getRegions(estoniaBranchList: PersistenceManager.shared.estoniaBranchList,
+        let countries = getCountries(estoniaBranchList: PersistenceManager.shared.estoniaBranchList,
                         latviaBranchList: PersistenceManager.shared.latviaBranchList,
                         lithuaniaBranchList: PersistenceManager.shared.lithuaniaBranchList)
-        self.regions.send(regions)
+        self.countries.send(countries)
+        
+        self.viewWillAppearTrigger.sink { [weak self] _ in
+            self?.getRegionData()
+        }.store(in: &anyCancellable)
     }
     
-    func getRegionData() {
+    private func getRegionData() {
         let estoniaPublisher: AnyPublisher<BranchList, AppError> = network.request(router: ApiRouter.estonia)
         let latviaPublisher: AnyPublisher<BranchList, AppError> = network.request(router: ApiRouter.latvia)
         let lithuaniaPublisher: AnyPublisher<BranchList, AppError> = network.request(router: ApiRouter.lithuania)
@@ -61,10 +67,10 @@ class RegionsViewModel: ViewModelType {
             PersistenceManager.shared.lithuaniaBranchList = lithuaniaBranchList
             
             guard let self = self else { return }
-            let regions = self.getRegions(estoniaBranchList: estoniaBranchList,
+            let countries = self.getCountries(estoniaBranchList: estoniaBranchList,
                             latviaBranchList: latviaBranchList,
                             lithuaniaBranchList: lithuaniaBranchList)
-            self.regions.send(regions)
+            self.countries.send(countries)
         }
         
         Publishers.Zip3(estoniaPublisher, latviaPublisher, lithuaniaPublisher)
@@ -73,26 +79,49 @@ class RegionsViewModel: ViewModelType {
             .store(in: &anyCancellable)
     }
     
-    private func getRegions(estoniaBranchList: BranchList,
+    private func getCountries(estoniaBranchList: BranchList,
                             latviaBranchList: BranchList,
-                            lithuaniaBranchList: BranchList) -> [Region] {
-        let regionEstonia = Region(name: RegionName.estonia.rawValue,
-                                   Branchs: estoniaBranchList)
-        let regionLatvia = Region(name: RegionName.latvia.rawValue,
-                                   Branchs: latviaBranchList)
-        let regionLithuania = Region(name: RegionName.lithuania.rawValue,
-                                   Branchs: lithuaniaBranchList)
+                            lithuaniaBranchList: BranchList) -> [Country] {
         
-        var regions = [Region]()
-        regions.append(regionEstonia)
-        regions.append(regionLatvia)
-        regions.append(regionLithuania)
+        let estoniaBranchListSorted = estoniaBranchList.sorted { $0.name < $1.name }
+        let regionEstonia = Dictionary.init(grouping: estoniaBranchListSorted,
+                                            by: { $0.region ?? "Unknown"})
+        let regionEstoniaSorted = regionEstonia
+            .sorted { $0.key < $1.key }
+            .map { return Region(name: $0.key, branches: $0.value) }
+        let estonia = Country(name: CountryName.estonia.rawValue,
+                                   regions: regionEstoniaSorted)
+        
+        let latviaBranchListSorted = latviaBranchList.sorted { $0.name < $1.name }
+        let regionLatvia = Dictionary.init(grouping: latviaBranchListSorted,
+                                            by: { $0.region ?? "Unknown"})
+        let regionLatviaSorted = regionLatvia
+            .sorted { $0.key < $1.key }
+            .map { return Region(name: $0.key, branches: $0.value) }
+        let latvia = Country(name: CountryName.latvia.rawValue,
+                                   regions: regionLatviaSorted)
+        
+        let lithuaniaBranchListSorted = lithuaniaBranchList.sorted { $0.name < $1.name }
+        let regionLithuania = Dictionary.init(grouping: lithuaniaBranchListSorted,
+                                            by: { $0.region ?? "Unknown"})
+        let regionLithuaniaSorted = regionLithuania
+            .sorted { $0.key < $1.key }
+            .map { return Region(name: $0.key, branches: $0.value) }
+        let lithuania = Country(name: CountryName.lithuania.rawValue,
+                                   regions: regionLithuaniaSorted)
+        
+        var regions = [Country]()
+        regions.append(estonia)
+        regions.append(latvia)
+        regions.append(lithuania)
         return regions
     }
 }
 
 extension RegionsViewModel {
-    func navigateToRegionDetails() {
-        self.coordinator?.navigateToRegionDetails()
+    func navigateToRegionDetails(indexPath: IndexPath) {
+        let country = countries.value[indexPath.section]
+        let region = country.regions[indexPath.row]
+        self.coordinator?.navigateToRegionDetails(region: region)
     }
 }

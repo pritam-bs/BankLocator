@@ -9,6 +9,11 @@ import Combine
 
 class RegionDetailsViewModel: ViewModelType {
     weak var coordinator: BankLocatorCoordinator?
+    private(set) var region: Region
+    
+    init(region: Region) {
+        self.region = region
+    }
 }
 
 extension RegionDetailsViewModel {

@@ -71,6 +71,7 @@ struct Branch: Codable {
     let latitude, longitude: Double
     let info: String?
     let hasCoinStation: Bool?
+    let uuid = UUID()
     
     enum CodingKeys: String, CodingKey {
         case type = "t"
@@ -83,6 +84,16 @@ struct Branch: Codable {
         case longitude = "lon"
         case info = "i"
         case hasCoinStation = "cs"
+    }
+}
+
+extension Branch: Hashable, Equatable {
+    static func == (lhs: Branch, rhs: Branch) -> Bool {
+        return lhs.uuid == rhs.uuid
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(uuid)
     }
 }
 

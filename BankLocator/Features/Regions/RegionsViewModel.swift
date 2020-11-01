@@ -43,7 +43,9 @@ class RegionsViewModel: ViewModelType {
         let lithuaniaPublisher: AnyPublisher<BranchList, AppError> = network.request(router: ApiRouter.lithuania)
         
         let onRequest: (Subscribers.Demand) -> Void = { [weak self] _ in
-            self?.isLoading?.send(true)
+            if !(self?.hasCacheData() ?? false) {
+                self?.isLoading?.send(true)
+            }
         }
         
         let completionHandler: (Subscribers.Completion<AppError>) -> Void = { [weak self] completion in
@@ -115,6 +117,13 @@ class RegionsViewModel: ViewModelType {
         regions.append(latvia)
         regions.append(lithuania)
         return regions
+    }
+    
+    private func hasCacheData() -> Bool {
+        for contry in self.countries.value {
+            return !contry.regions.isEmpty
+        }
+        return false
     }
 }
 

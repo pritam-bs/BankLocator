@@ -46,21 +46,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h19-rb-D0x">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="press:" destination="ViK-zq-qR0" eventType="touchUpInside" id="qzu-2l-a4M"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o5A-lQ-ebi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fry-aG-cS8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="h19-rb-D0x" firstAttribute="centerX" secondItem="xm4-IJ-uJh" secondAttribute="centerX" id="Qar-f3-kvn"/>
-                            <constraint firstItem="h19-rb-D0x" firstAttribute="centerY" secondItem="xm4-IJ-uJh" secondAttribute="centerY" id="bbT-7h-Hlc"/>
+                            <constraint firstItem="Fry-aG-cS8" firstAttribute="trailing" secondItem="o5A-lQ-ebi" secondAttribute="trailing" id="44c-Wf-j1h"/>
+                            <constraint firstItem="o5A-lQ-ebi" firstAttribute="leading" secondItem="Fry-aG-cS8" secondAttribute="leading" id="SeL-2H-oiR"/>
+                            <constraint firstItem="Fry-aG-cS8" firstAttribute="bottom" secondItem="o5A-lQ-ebi" secondAttribute="bottom" id="fe2-56-rAr"/>
+                            <constraint firstItem="o5A-lQ-ebi" firstAttribute="top" secondItem="Fry-aG-cS8" secondAttribute="top" id="mgu-6S-5A8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="branchTableView" destination="o5A-lQ-ebi" id="Mue-7F-mdP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ij-xC-cja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

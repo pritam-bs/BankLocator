@@ -57,14 +57,14 @@ class RegionsViewController: UIViewController, ViewControllerType, StoryboardBas
         }
         
         func bindViewModelToView() {
-            let regionValueHandler: ([Country]) -> Void = { [weak self] countries in
+            let contriesValueHandler: ([Country]) -> Void = { [weak self] countries in
                 Logger.log(countries)
                 self?.applySnapshot(countries: countries, animate: false)
             }
             
             self.viewModel.countries
                 .receive(on: DispatchQueue.main)
-                .sink(receiveValue: regionValueHandler)
+                .sink(receiveValue: contriesValueHandler)
                 .store(in: &anyCancellable)
         }
         

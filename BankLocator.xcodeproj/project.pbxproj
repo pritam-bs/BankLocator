@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9C34C2F4254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34C2F3254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift */; };
 		9C34C2FC254EF02E00F0E714 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34C2FB254EF02E00F0E714 /* Region.swift */; };
+		9C34C302254F06EF00F0E714 /* BranchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C34C301254F06EF00F0E714 /* BranchTableViewCell.xib */; };
+		9C34C307254F06F900F0E714 /* BranchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34C306254F06F900F0E714 /* BranchTableViewCell.swift */; };
 		9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */; };
 		9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */; };
 		9CB04C77254D3C0000758E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C76254D3C0000758E39 /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 /* Begin PBXFileReference section */
 		9C34C2F3254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
 		9C34C2FB254EF02E00F0E714 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		9C34C301254F06EF00F0E714 /* BranchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BranchTableViewCell.xib; sourceTree = "<group>"; };
+		9C34C306254F06F900F0E714 /* BranchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTableViewCell.swift; sourceTree = "<group>"; };
 		9CB04C6A254D3BFF00758E39 /* BankLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB04C6D254D3BFF00758E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C34C300254F04EE00F0E714 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C34C301254F06EF00F0E714 /* BranchTableViewCell.xib */,
+				9C34C306254F06F900F0E714 /* BranchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9CB04C61254D3BFF00758E39 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +235,7 @@
 		9CB04CCA254D486C00758E39 /* RegionDetails */ = {
 			isa = PBXGroup;
 			children = (
+				9C34C300254F04EE00F0E714 /* View */,
 				9CB04CEB254D4A2700758E39 /* RegionDetailsViewController.swift */,
 				9CB04CF0254D4A3500758E39 /* RegionDetailsViewModel.swift */,
 			);
@@ -415,6 +429,7 @@
 				9CB04CE7254D49FB00758E39 /* BankLocatorStoryboard.storyboard in Resources */,
 				9CB04C7A254D3C0000758E39 /* LaunchScreen.storyboard in Resources */,
 				9CB04CE2254D49B600758E39 /* ColorAssets.xcassets in Resources */,
+				9C34C302254F06EF00F0E714 /* BranchTableViewCell.xib in Resources */,
 				9CB04C77254D3C0000758E39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +474,7 @@
 				9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */,
 				9CB04CB4254D401500758E39 /* StoryboardBased.swift in Sources */,
 				9C34C2FC254EF02E00F0E714 /* Region.swift in Sources */,
+				9C34C307254F06F900F0E714 /* BranchTableViewCell.swift in Sources */,
 				9CB04D43254E779200758E39 /* PersistenceManager.swift in Sources */,
 				9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */,
 				9CB04D22254DC5F700758E39 /* ApiPath.swift in Sources */,

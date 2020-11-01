@@ -28,6 +28,7 @@ class RegionsViewController: UIViewController, ViewControllerType, StoryboardBas
         initialize(anyCancellable: &anyCancellable)
         setUpBindings()
         setupTableView()
+        title = "Region"
     }
     
     private func setupTableView() {

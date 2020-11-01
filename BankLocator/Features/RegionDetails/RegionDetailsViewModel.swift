@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 class RegionDetailsViewModel: ViewModelType {
     weak var coordinator: BankLocatorCoordinator?
@@ -20,7 +21,8 @@ class RegionDetailsViewModel: ViewModelType {
 }
 
 extension RegionDetailsViewModel {
-    func navigateToDetails() {
-        self.coordinator?.navigateToDetails()
+    func navigateToDetails(indexPath: IndexPath) {
+        let branch = regionSubject.value.branches[indexPath.row]
+        self.coordinator?.navigateToDetails(branch: branch)
     }
 }

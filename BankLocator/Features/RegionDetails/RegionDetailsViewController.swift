@@ -31,6 +31,7 @@ class RegionDetailsViewController: UIViewController, StoryboardBased, ViewModelB
         func bindViewModelToView() {
             let regionValueHandler: (Region) -> Void = { [weak self] region in
                 Logger.log(region)
+                self?.title = region.name
                 self?.applySnapshot(region: region, animate: true)
             }
             
@@ -67,6 +68,6 @@ class RegionDetailsViewController: UIViewController, StoryboardBased, ViewModelB
 
 extension RegionDetailsViewController: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.viewModel.navigateToDetails(indexPath: indexPath)
     }
 }

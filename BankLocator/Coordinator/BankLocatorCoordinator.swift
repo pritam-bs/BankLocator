@@ -29,8 +29,8 @@ final class BankLocatorCoordinator: Coordinator {
         navigationController.pushViewController(controller, animated: true)
     }
     
-    func navigateToDetails() {
-        let viewModel = DetailsViewModel()
+    func navigateToDetails(branch: Branch) {
+        let viewModel = DetailsViewModel(branch: branch)
         viewModel.coordinator = self
         let controller = DetailsViewController.instantiate(withViewModel: viewModel)
         navigationController.pushViewController(controller, animated: true)

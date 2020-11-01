@@ -25,7 +25,7 @@ class RegionsViewController: UIViewController, ViewControllerType, StoryboardBas
     }
     
     @IBAction func press(_ sender: Any) {
-        self.viewModel.navigateToRegionDetails()
+        self.viewModel.getRegionData()
     }
     
     func shouldShowErrorDialog(errorResponse: AppError, requestTag: String) -> Bool {

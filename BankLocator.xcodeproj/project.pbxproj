@@ -28,6 +28,14 @@
 		9CB04D00254D4CDB00758E39 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CFF254D4CDB00758E39 /* ViewControllerType.swift */; };
 		9CB04D06254D80A200758E39 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D05254D80A200758E39 /* AppError.swift */; };
 		9CB04D0E254D940A00758E39 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D0D254D940A00758E39 /* StoryboardName.swift */; };
+		9CB04D1A254DB47000758E39 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D19254DB47000758E39 /* ApiRouter.swift */; };
+		9CB04D22254DC5F700758E39 /* ApiPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D21254DC5F700758E39 /* ApiPath.swift */; };
+		9CB04D2A254DDA3B00758E39 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D29254DDA3B00758E39 /* NetworkConstants.swift */; };
+		9CB04D32254E430F00758E39 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D31254E430F00758E39 /* Network.swift */; };
+		9CB04D3A254E54B000758E39 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D39254E54B000758E39 /* Branch.swift */; };
+		9CB04D43254E779200758E39 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D42254E779200758E39 /* PersistenceManager.swift */; };
+		9CB04D4C254E839A00758E39 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D4B254E839A00758E39 /* Logger.swift */; };
+		9CB04D54254E8A0000758E39 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D53254E8A0000758E39 /* Region.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +83,14 @@
 		9CB04CFF254D4CDB00758E39 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
 		9CB04D05254D80A200758E39 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		9CB04D0D254D940A00758E39 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		9CB04D19254DB47000758E39 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		9CB04D21254DC5F700758E39 /* ApiPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPath.swift; sourceTree = "<group>"; };
+		9CB04D29254DDA3B00758E39 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		9CB04D31254E430F00758E39 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9CB04D39254E54B000758E39 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		9CB04D42254E779200758E39 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		9CB04D4B254E839A00758E39 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		9CB04D53254E8A0000758E39 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +141,10 @@
 		9CB04C6C254D3BFF00758E39 /* BankLocator */ = {
 			isa = PBXGroup;
 			children = (
+				9CB04D4A254E835F00758E39 /* Utilities */,
+				9CB04D41254E777400758E39 /* Managers */,
+				9CB04D37254E531200758E39 /* Data */,
+				9CB04D18254DB2DE00758E39 /* Network */,
 				9CB04D04254D808700758E39 /* Error */,
 				9CB04CC8254D479D00758E39 /* Features */,
 				9CB04CB2254D3FDE00758E39 /* Protocol */,
@@ -237,6 +257,50 @@
 				9CB04D05254D80A200758E39 /* AppError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		9CB04D18254DB2DE00758E39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04D19254DB47000758E39 /* ApiRouter.swift */,
+				9CB04D21254DC5F700758E39 /* ApiPath.swift */,
+				9CB04D29254DDA3B00758E39 /* NetworkConstants.swift */,
+				9CB04D31254E430F00758E39 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9CB04D37254E531200758E39 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04D38254E531B00758E39 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9CB04D38254E531B00758E39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04D39254E54B000758E39 /* Branch.swift */,
+				9CB04D53254E8A0000758E39 /* Region.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CB04D41254E777400758E39 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04D42254E779200758E39 /* PersistenceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9CB04D4A254E835F00758E39 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9CB04D4B254E839A00758E39 /* Logger.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,19 +434,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB04D54254E8A0000758E39 /* Region.swift in Sources */,
 				9CB04CAB254D3EEB00758E39 /* Coordinator.swift in Sources */,
+				9CB04D4C254E839A00758E39 /* Logger.swift in Sources */,
 				9CB04CC4254D472A00758E39 /* BankLocatorCoordinator.swift in Sources */,
 				9CB04CBF254D42BE00758E39 /* ViewModelType.swift in Sources */,
 				9CB04CF6254D4A4500758E39 /* DetailsViewController.swift in Sources */,
 				9CB04CEC254D4A2700758E39 /* RegionDetailsViewController.swift in Sources */,
+				9CB04D2A254DDA3B00758E39 /* NetworkConstants.swift in Sources */,
+				9CB04D1A254DB47000758E39 /* ApiRouter.swift in Sources */,
 				9CB04CCD254D48E000758E39 /* RegionsViewController.swift in Sources */,
 				9CB04D0E254D940A00758E39 /* StoryboardName.swift in Sources */,
 				9CB04D06254D80A200758E39 /* AppError.swift in Sources */,
 				9CB04CF1254D4A3500758E39 /* RegionDetailsViewModel.swift in Sources */,
 				9CB04CD5254D48F200758E39 /* RegionsViewModel.swift in Sources */,
+				9CB04D32254E430F00758E39 /* Network.swift in Sources */,
 				9CB04C6E254D3BFF00758E39 /* AppDelegate.swift in Sources */,
 				9CB04CB4254D401500758E39 /* StoryboardBased.swift in Sources */,
+				9CB04D43254E779200758E39 /* PersistenceManager.swift in Sources */,
 				9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */,
+				9CB04D22254DC5F700758E39 /* ApiPath.swift in Sources */,
+				9CB04D3A254E54B000758E39 /* Branch.swift in Sources */,
 				9CB04CFB254D4A5300758E39 /* DetailsViewModel.swift in Sources */,
 				9CB04D00254D4CDB00758E39 /* ViewControllerType.swift in Sources */,
 			);

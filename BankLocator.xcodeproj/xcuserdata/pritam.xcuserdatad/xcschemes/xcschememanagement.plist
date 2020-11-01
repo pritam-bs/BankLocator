@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BankLocator.xcscheme_^#shared#^_</key>
+		<key>BankLocator_debug.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>BankLocator_release.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9CB04C69254D3BFF00758E39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9CB04C7F254D3C0000758E39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9CB04C8A254D3C0000758E39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

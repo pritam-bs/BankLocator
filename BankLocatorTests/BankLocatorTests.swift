@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import BankLocator
+import BankLocator
 
 class BankLocatorTests: XCTestCase {
 

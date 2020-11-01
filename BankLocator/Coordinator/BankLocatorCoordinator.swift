@@ -16,7 +16,7 @@ final class BankLocatorCoordinator: Coordinator {
     }
 
     func start() {
-        let viewModel = RegionsViewModel()
+        let viewModel = RegionsViewModel(network: Network.shared)
         viewModel.coordinator = self
         let controller = RegionsViewController.instantiate(withViewModel: viewModel)
         navigationController.pushViewController(controller, animated: true)

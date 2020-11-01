@@ -11,7 +11,7 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="branchCellId" rowHeight="79" id="OTA-mA-lSb" customClass="BranchTableViewCell" customModule="BankLocator" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OTA-mA-lSb" id="5iB-Wj-hqi">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OTA-mA-lSb" id="5iB-Wj-hqi">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -44,7 +44,7 @@
                     <constraint firstItem="qdz-ga-3cw" firstAttribute="leading" secondItem="UUp-Yx-yNc" secondAttribute="leading" id="Gbg-gk-Gii"/>
                     <constraint firstItem="qdz-ga-3cw" firstAttribute="top" secondItem="UUp-Yx-yNc" secondAttribute="bottom" constant="8" id="PWo-jx-hHv"/>
                     <constraint firstItem="W8N-Sc-Xkj" firstAttribute="top" secondItem="5iB-Wj-hqi" secondAttribute="top" constant="8" id="RJe-Kc-hJP"/>
-                    <constraint firstAttribute="bottom" secondItem="W8N-Sc-Xkj" secondAttribute="bottom" constant="8" id="Vgg-Hs-34n"/>
+                    <constraint firstAttribute="bottom" secondItem="W8N-Sc-Xkj" secondAttribute="bottom" priority="750" constant="8" id="Vgg-Hs-34n"/>
                     <constraint firstItem="UUp-Yx-yNc" firstAttribute="top" secondItem="W8N-Sc-Xkj" secondAttribute="top" id="Ygh-On-CVS"/>
                     <constraint firstItem="qdz-ga-3cw" firstAttribute="trailing" secondItem="UUp-Yx-yNc" secondAttribute="trailing" id="gGX-wP-W7i"/>
                     <constraint firstItem="UUp-Yx-yNc" firstAttribute="leading" secondItem="W8N-Sc-Xkj" secondAttribute="trailing" constant="8" id="plU-Kd-MyR"/>

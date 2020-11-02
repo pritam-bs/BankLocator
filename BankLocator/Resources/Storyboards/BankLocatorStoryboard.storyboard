@@ -101,7 +101,6 @@
                                                 <constraints>
                                                     <constraint firstItem="xY3-tA-EYk" firstAttribute="width" secondItem="HSg-Dr-G9c" secondAttribute="width" multiplier="0.3" id="6AU-Og-Sld"/>
                                                     <constraint firstItem="kVL-5P-qU1" firstAttribute="top" secondItem="HSg-Dr-G9c" secondAttribute="top" constant="15" id="9Dq-xW-lUH"/>
-                                                    <constraint firstItem="kVL-5P-qU1" firstAttribute="bottom" secondItem="xY3-tA-EYk" secondAttribute="bottom" id="Pxw-93-jkH"/>
                                                     <constraint firstAttribute="bottom" secondItem="kVL-5P-qU1" secondAttribute="bottom" constant="15" id="icr-dn-m0m"/>
                                                 </constraints>
                                             </stackView>
@@ -132,7 +131,6 @@
                                                     <constraint firstItem="OSl-fW-t2f" firstAttribute="width" secondItem="zxm-5T-pby" secondAttribute="width" multiplier="0.3" id="1mG-49-tf0"/>
                                                     <constraint firstAttribute="bottom" secondItem="oUW-pS-xh8" secondAttribute="bottom" constant="15" id="CPf-wg-1MP"/>
                                                     <constraint firstItem="oUW-pS-xh8" firstAttribute="top" secondItem="zxm-5T-pby" secondAttribute="top" constant="15" id="KKU-Gn-cOZ"/>
-                                                    <constraint firstItem="oUW-pS-xh8" firstAttribute="bottom" secondItem="OSl-fW-t2f" secondAttribute="bottom" id="PiT-VH-rnC"/>
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnD-Fv-1CK">
@@ -159,7 +157,6 @@
                                                     </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="qAV-2e-hYr" firstAttribute="bottom" secondItem="HxJ-ku-N96" secondAttribute="bottom" id="7sf-1E-AeX"/>
                                                     <constraint firstItem="qAV-2e-hYr" firstAttribute="top" secondItem="knY-wJ-yem" secondAttribute="top" constant="15" id="En5-Kp-rWM"/>
                                                     <constraint firstAttribute="bottom" secondItem="qAV-2e-hYr" secondAttribute="bottom" constant="15" id="leT-FD-1pP"/>
                                                     <constraint firstItem="HxJ-ku-N96" firstAttribute="width" secondItem="knY-wJ-yem" secondAttribute="width" multiplier="0.3" id="m1h-ck-kCQ"/>
@@ -191,7 +188,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="kVM-c5-rAL" secondAttribute="bottom" constant="15" id="Dxa-Ax-EqF"/>
                                                     <constraint firstItem="zDB-rD-v2z" firstAttribute="width" secondItem="llp-wU-crp" secondAttribute="width" multiplier="0.3" id="Vm8-Ln-Fm6"/>
-                                                    <constraint firstItem="kVM-c5-rAL" firstAttribute="bottom" secondItem="zDB-rD-v2z" secondAttribute="bottom" id="h9P-WB-Gcz"/>
                                                     <constraint firstItem="kVM-c5-rAL" firstAttribute="top" secondItem="llp-wU-crp" secondAttribute="top" constant="15" id="uCj-bD-u6b"/>
                                                 </constraints>
                                             </stackView>
@@ -232,7 +228,6 @@
                                                 <constraints>
                                                     <constraint firstItem="iG0-Jx-bAy" firstAttribute="width" secondItem="uof-e9-AZB" secondAttribute="width" multiplier="0.3" id="Jui-8C-aUq"/>
                                                     <constraint firstItem="kcG-kQ-wmY" firstAttribute="top" secondItem="uof-e9-AZB" secondAttribute="top" constant="15" id="XF3-Sa-ncg"/>
-                                                    <constraint firstItem="kcG-kQ-wmY" firstAttribute="bottom" secondItem="iG0-Jx-bAy" secondAttribute="bottom" id="ghU-Ix-AKB"/>
                                                     <constraint firstAttribute="bottom" secondItem="kcG-kQ-wmY" secondAttribute="bottom" constant="15" id="mGK-kK-YZB"/>
                                                 </constraints>
                                             </stackView>
@@ -261,7 +256,6 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="ZWw-eH-t6b" firstAttribute="width" secondItem="leH-IE-ImM" secondAttribute="width" multiplier="0.3" id="2TC-uF-Ly4"/>
-                                                    <constraint firstItem="YaM-69-X2c" firstAttribute="bottom" secondItem="ZWw-eH-t6b" secondAttribute="bottom" id="Qg3-c8-v8s"/>
                                                     <constraint firstAttribute="bottom" secondItem="YaM-69-X2c" secondAttribute="bottom" constant="15" id="fK3-Km-vNw"/>
                                                     <constraint firstItem="YaM-69-X2c" firstAttribute="top" secondItem="leH-IE-ImM" secondAttribute="top" constant="15" id="uF3-w8-lj5"/>
                                                 </constraints>

@@ -20,34 +20,6 @@
                ReferencedContainer = "container:BankLocator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9CB04C7F254D3C0000758E39"
-               BuildableName = "BankLocatorTests.xctest"
-               BlueprintName = "BankLocatorTests"
-               ReferencedContainer = "container:BankLocator.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9CB04C8A254D3C0000758E39"
-               BuildableName = "BankLocatorUITests.xctest"
-               BlueprintName = "BankLocatorUITests"
-               ReferencedContainer = "container:BankLocator.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

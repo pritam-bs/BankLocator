@@ -40,6 +40,7 @@
 		9CB04D43254E779200758E39 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D42254E779200758E39 /* PersistenceManager.swift */; };
 		9CB04D4C254E839A00758E39 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D4B254E839A00758E39 /* Logger.swift */; };
 		9CB04D54254E8A0000758E39 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D53254E8A0000758E39 /* Country.swift */; };
+		9CB30C92254FB2F1007CD701 /* BackgroundFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30C91254FB2F1007CD701 /* BackgroundFetchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		9CB04D42254E779200758E39 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		9CB04D4B254E839A00758E39 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9CB04D53254E8A0000758E39 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		9CB30C91254FB2F1007CD701 /* BackgroundFetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundFetchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				9CB04D42254E779200758E39 /* PersistenceManager.swift */,
+				9CB30C91254FB2F1007CD701 /* BackgroundFetchManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				9C34C2F4254EA07800F0E714 /* RegionsTableViewDiffableDataSource.swift in Sources */,
 				9CB04CF6254D4A4500758E39 /* DetailsViewController.swift in Sources */,
 				9CB04CEC254D4A2700758E39 /* RegionDetailsViewController.swift in Sources */,
+				9CB30C92254FB2F1007CD701 /* BackgroundFetchManager.swift in Sources */,
 				9CB04D2A254DDA3B00758E39 /* NetworkConstants.swift in Sources */,
 				9CB04D1A254DB47000758E39 /* ApiRouter.swift in Sources */,
 				9CB04CCD254D48E000758E39 /* RegionsViewController.swift in Sources */,

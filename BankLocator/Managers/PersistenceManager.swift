@@ -48,7 +48,7 @@ class PersistenceManager {
                     let decoded = try decoder.decode(ValueType.self, from: data)
                     return decoded
                 } catch {
-                    Logger.log(error)
+                    Logger.log(error.localizedDescription)
                 }
 
                 return nil
@@ -66,7 +66,7 @@ class PersistenceManager {
                     userDefaults.set(encoded, forKey: key.key)
                     userDefaults.synchronize()
                 } catch {
-                    Logger.log(error)
+                    Logger.log(error.localizedDescription)
                 }
     }
     

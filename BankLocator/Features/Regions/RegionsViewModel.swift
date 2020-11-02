@@ -35,6 +35,12 @@ class RegionsViewModel: ViewModelType {
         self.viewWillAppearTrigger.sink { [weak self] _ in
             self?.getRegionData()
         }.store(in: &anyCancellable)
+        
+        registerAppRefreshNotification()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     private func getRegionData() {
@@ -60,9 +66,9 @@ class RegionsViewModel: ViewModelType {
         }
         
         let receiveValueHandler: (BranchList, BranchList, BranchList) -> Void = { [weak self] (estoniaBranchList, latviaBranchList, lithuaniaBranchList) in
-            Logger.log(estoniaBranchList)
-            Logger.log(latviaBranchList)
-            Logger.log(lithuaniaBranchList)
+//            Logger.log(estoniaBranchList)
+//            Logger.log(latviaBranchList)
+//            Logger.log(lithuaniaBranchList)
             
             PersistenceManager.shared.estoniaBranchList = estoniaBranchList
             PersistenceManager.shared.latviaBranchList = latviaBranchList
@@ -132,5 +138,19 @@ extension RegionsViewModel {
         let country = countries.value[indexPath.section]
         let region = country.regions[indexPath.row]
         self.coordinator?.navigateToRegionDetails(region: region)
+    }
+}
+
+extension RegionsViewModel {
+    private func registerAppRefreshNotification() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appRefreshHandler), name: Notification.Name(AppRefreshConstant.appRefreshCompletionNotificationName), object: nil)
+    }
+    
+    @objc func appRefreshHandler() {
+        let countries = getCountries(estoniaBranchList: PersistenceManager.shared.estoniaBranchList,
+                        latviaBranchList: PersistenceManager.shared.latviaBranchList,
+                        lithuaniaBranchList: PersistenceManager.shared.lithuaniaBranchList)
+        self.countries.send(countries)
     }
 }

@@ -32,7 +32,7 @@ class DetailsViewController: UIViewController, StoryboardBased, ViewModelBased {
     private func setUpBindings() {
         func bindViewModelToView() {
             let branchValueHandler: (Branch) -> Void = { [weak self] branch in
-                Logger.log(branch)
+                Logger.log(branch.name)
                 self?.title = branch.name
                 self?.typeLabel.text = branch.type.name
                 self?.nameLabel.text = branch.name

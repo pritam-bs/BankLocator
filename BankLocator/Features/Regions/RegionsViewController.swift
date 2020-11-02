@@ -59,7 +59,6 @@ class RegionsViewController: UIViewController, ViewControllerType, StoryboardBas
         
         func bindViewModelToView() {
             let contriesValueHandler: ([Country]) -> Void = { [weak self] countries in
-                Logger.log(countries)
                 self?.applySnapshot(countries: countries, animate: false)
             }
             

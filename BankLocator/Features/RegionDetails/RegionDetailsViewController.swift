@@ -30,7 +30,7 @@ class RegionDetailsViewController: UIViewController, StoryboardBased, ViewModelB
     private func setUpBindings() {
         func bindViewModelToView() {
             let regionValueHandler: (Region) -> Void = { [weak self] region in
-                Logger.log(region)
+                Logger.log(region.name)
                 self?.title = region.name
                 self?.applySnapshot(region: region, animate: true)
             }

@@ -15,7 +15,6 @@
 		9CB04C70254D3BFF00758E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C6F254D3BFF00758E39 /* SceneDelegate.swift */; };
 		9CB04C77254D3C0000758E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C76254D3C0000758E39 /* Assets.xcassets */; };
 		9CB04C7A254D3C0000758E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB04C78254D3C0000758E39 /* LaunchScreen.storyboard */; };
-		9CB04C85254D3C0000758E39 /* BankLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C84254D3C0000758E39 /* BankLocatorTests.swift */; };
 		9CB04C90254D3C0000758E39 /* BankLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04C8F254D3C0000758E39 /* BankLocatorUITests.swift */; };
 		9CB04CAB254D3EEB00758E39 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CAA254D3EEB00758E39 /* Coordinator.swift */; };
 		9CB04CB4254D401500758E39 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04CB3254D401500758E39 /* StoryboardBased.swift */; };
@@ -41,6 +40,13 @@
 		9CB04D4C254E839A00758E39 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D4B254E839A00758E39 /* Logger.swift */; };
 		9CB04D54254E8A0000758E39 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB04D53254E8A0000758E39 /* Country.swift */; };
 		9CB30C92254FB2F1007CD701 /* BackgroundFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30C91254FB2F1007CD701 /* BackgroundFetchManager.swift */; };
+		9CB30C9C25502BD9007CD701 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30C9B25502BD9007CD701 /* NetworkTest.swift */; };
+		9CB30CA125503308007CD701 /* DetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30CA025503308007CD701 /* DetailsViewModelTest.swift */; };
+		9CB30CA62550388C007CD701 /* BranchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30CA52550388C007CD701 /* BranchTest.swift */; };
+		9CB30CAB25503B84007CD701 /* RegionsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30CAA25503B84007CD701 /* RegionsViewModelTest.swift */; };
+		9CB30CB0255041A4007CD701 /* RegionDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30CAF255041A4007CD701 /* RegionDetailsViewModelTest.swift */; };
+		9CB30CB825504446007CD701 /* PersistenceManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30CB725504446007CD701 /* PersistenceManagerTest.swift */; };
+		9CB30CBD25504793007CD701 /* ApiRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB30CBC25504793007CD701 /* ApiRouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +78,6 @@
 		9CB04C79254D3C0000758E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CB04C7B254D3C0000758E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CB04C80254D3C0000758E39 /* BankLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CB04C84254D3C0000758E39 /* BankLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankLocatorTests.swift; sourceTree = "<group>"; };
 		9CB04C86254D3C0000758E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CB04C8B254D3C0000758E39 /* BankLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB04C8F254D3C0000758E39 /* BankLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankLocatorUITests.swift; sourceTree = "<group>"; };
@@ -101,6 +106,13 @@
 		9CB04D4B254E839A00758E39 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9CB04D53254E8A0000758E39 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		9CB30C91254FB2F1007CD701 /* BackgroundFetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundFetchManager.swift; sourceTree = "<group>"; };
+		9CB30C9B25502BD9007CD701 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		9CB30CA025503308007CD701 /* DetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTest.swift; sourceTree = "<group>"; };
+		9CB30CA52550388C007CD701 /* BranchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTest.swift; sourceTree = "<group>"; };
+		9CB30CAA25503B84007CD701 /* RegionsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewModelTest.swift; sourceTree = "<group>"; };
+		9CB30CAF255041A4007CD701 /* RegionDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailsViewModelTest.swift; sourceTree = "<group>"; };
+		9CB30CB725504446007CD701 /* PersistenceManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManagerTest.swift; sourceTree = "<group>"; };
+		9CB30CBC25504793007CD701 /* ApiRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +192,14 @@
 		9CB04C83254D3C0000758E39 /* BankLocatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CB04C84254D3C0000758E39 /* BankLocatorTests.swift */,
 				9CB04C86254D3C0000758E39 /* Info.plist */,
+				9CB30C9B25502BD9007CD701 /* NetworkTest.swift */,
+				9CB30CA025503308007CD701 /* DetailsViewModelTest.swift */,
+				9CB30CA52550388C007CD701 /* BranchTest.swift */,
+				9CB30CAA25503B84007CD701 /* RegionsViewModelTest.swift */,
+				9CB30CAF255041A4007CD701 /* RegionDetailsViewModelTest.swift */,
+				9CB30CB725504446007CD701 /* PersistenceManagerTest.swift */,
+				9CB30CBC25504793007CD701 /* ApiRouterTest.swift */,
 			);
 			path = BankLocatorTests;
 			sourceTree = "<group>";
@@ -492,7 +510,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB04C85254D3C0000758E39 /* BankLocatorTests.swift in Sources */,
+				9CB30C9C25502BD9007CD701 /* NetworkTest.swift in Sources */,
+				9CB30CB825504446007CD701 /* PersistenceManagerTest.swift in Sources */,
+				9CB30CAB25503B84007CD701 /* RegionsViewModelTest.swift in Sources */,
+				9CB30CB0255041A4007CD701 /* RegionDetailsViewModelTest.swift in Sources */,
+				9CB30CBD25504793007CD701 /* ApiRouterTest.swift in Sources */,
+				9CB30CA62550388C007CD701 /* BranchTest.swift in Sources */,
+				9CB30CA125503308007CD701 /* DetailsViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
